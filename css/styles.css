@@ -1,0 +1,141 @@
+/* Google Font Import */
+@import url('https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap');
+
+/* CSS Reset */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* Root Stylings */
+:root {
+    /* Colors */
+    --CLR-YELLOW: hsl(47, 88%, 63%);
+    --CLR-WHITE: hsl(0, 0%, 100%);
+    --CLR-GREY: hsl(0, 0%, 50%);
+    --CLR-BLACK: hsl(0, 0%, 7%);
+
+    /* Fonts */
+    --FF: "Figtree", sans-serif;
+
+    --FS-HEAD: 1.5em;      /* 24px */
+    --FS-MEDIUM-BODY: 1em; /* 16px */
+    --FS-BODY: 0.875em;    /* 14px */
+
+    --FW-500: 500;
+    --FW-800: 800;
+
+    /* Styles */
+}
+
+/* General Styles */
+body {
+    background-color: var(--CLR-YELLOW);
+    font-family: var(--FF);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    max-width: 24em;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.wrapper {
+    background-color: var(--CLR-WHITE);
+    border-radius: 0.8rem;
+    box-shadow: 1px; /* Work on after everything else is done~ */
+}
+
+/* Top Image */
+.preview-image {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 0.938em;
+}
+
+.preview-image img {
+    border-radius: 0.8rem;
+}
+
+/* Published date, header, and paragraph text */
+.text-content {
+    display: grid;
+}
+
+.subject {
+    align-items: center;
+    background-color: var(--CLR-YELLOW);
+    border-radius: 0.4em;
+    display: flex;
+    font-size: var(--FS-MEDIUM-BODY);
+    font-weight: var(--FW-800);
+    height: 1.813em;
+    justify-content: center;
+    margin-left: 1.5em;
+    margin-top: 0.75em;
+    text-align: center;
+    width: 5.125em;
+}
+
+.date {
+    margin-top: 0.75em;
+    margin-left: 1.7em;
+    font-size: var(--FS-BODY);
+    color: var(--CLR-BLACK);
+}
+
+.title {
+    margin-top: 0.55em;
+    margin-left: 0.95em;
+    font-size: var(--FS-HEAD);
+    color: var(--CLR-BLACK);
+}
+
+.desc {
+    margin-top: 0.85em;
+    margin-left: 1.45em;
+    line-height: 1.5;
+    color: var(--CLR-GREY);
+}
+
+/* Author container section */
+.author {
+    display: flex;
+    justify-content: left;
+    margin-left: 1.5em;
+    padding-top: 0.938em;
+    padding-bottom: 1.25em;
+}
+
+.author-pic {
+    width: 2em;
+    height: 2em;
+}
+
+.author-name {
+    margin-top: 0.428em;
+    margin-left: 0.75em;
+    font-weight: var(--FW-800);
+    color: var(--CLR-BLACK);
+    font-size: var(--FS-BODY);
+}
+
+/* Mobile Media Query */
+@media only screen and (max-width: 23.438em) {
+    .container {
+        max-width: 22em;
+    }
+
+    .preview-image img {
+        max-width: 86%;
+    }
+}
