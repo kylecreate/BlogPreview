@@ -19,8 +19,8 @@ This is a solution to the [Blog Preview Card on Frontend Mentor](https://www.fro
 ![](screenshot.png)
 
 ### Links
-- Solution URL: [Solution](https://github.com/kylecreate/QRCode)
-- Live Site URL: [Live Preview](https://kylecreate-qrcode.netlify.app/)
+- Solution URL: [Solution](https://www.frontendmentor.io/solutions/blog-preview-card-h8N0nUbHsw)
+- Live Site URL: [Live Preview](https://kylecreate-blogpreview.netlify.app/)
 
 ### Built with
 - Semantic HTML5 markup
