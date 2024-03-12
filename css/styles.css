@@ -27,6 +27,8 @@
     --FW-800: 800;
 
     /* Styles */
+    --BOX-SHADOW-1: 0.625em 0.625em 0 var(--CLR-BLACK);
+    --BOX-SHADOW-2: 0.938em 0.938em 0 var(--CLR-BLACK);
 }
 
 /* General Styles */
@@ -51,7 +53,11 @@ body {
 .wrapper {
     background-color: var(--CLR-WHITE);
     border-radius: 0.8rem;
-    box-shadow: 1px; /* Work on after everything else is done~ */
+    box-shadow: var(--BOX-SHADOW-1);
+}
+
+.wrapper:hover {
+    box-shadow: var(--BOX-SHADOW-2);
 }
 
 /* Top Image */
@@ -98,6 +104,11 @@ body {
     margin-left: 0.95em;
     font-size: var(--FS-HEAD);
     color: var(--CLR-BLACK);
+}
+
+.title:hover {
+    color: var(--CLR-YELLOW);
+    cursor: pointer;
 }
 
 .desc {
